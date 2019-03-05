@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e9282e0-207f-4722-b113-c87c588d7205" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/resources/views/welcom.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -19,8 +20,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="150">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="69" selection-start-column="69" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -33,9 +43,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
       </list>
     </option>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -117,8 +131,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="427" />
-    <option name="y" value="253" />
+    <option name="x" value="385" />
+    <option name="y" value="261" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -133,6 +147,22 @@
             <path>
               <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="myapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
@@ -180,15 +210,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551745215819</updated>
-      <workItem from="1551745216884" duration="472000" />
+      <workItem from="1551745216884" duration="1144000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="472000" />
+    <option name="totallyTimeSpent" value="1144000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="427" y="253" width="1400" height="1000" extended-state="0" />
+    <frame x="385" y="261" width="1400" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -216,10 +246,17 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="69" selection-start-column="69" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="150">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
