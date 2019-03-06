@@ -15,18 +15,18 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(User::class, function (Faker $faker) {
+$factory->define(User::class, function (Faker\Generator $faker) {
 
     return [
         'name' => $faker->name,
         'email' => $faker->safeEmail,
         // 'email_verified_at' => now(),
         'password' => bcrypt('password'),  //'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
-        'remember_token' => str_random(10),
+        'remember_token' => Str::random(10),
     ];
 });
 
-$factory->define(App\Article::class, function(Faker $faker) {
+$factory->define(App\Article::class, function(Faker\Generator $faker) {
     $date = $faker->dateTimeThisMonth;
 
     return [
