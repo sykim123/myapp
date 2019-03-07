@@ -40,6 +40,8 @@ Route::get('auth/logout', function() {
 Route::resource('articles', 'ArticlesController');
 Auth::routes();
 
+
+
 /*DB::listen(function ($query){
     var_dump($query->sql);
 });*/

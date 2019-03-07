@@ -35,8 +35,12 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $casts = [
+ /*   protected $casts = [
         'email_verified_at' => 'datetime',
+    ];*/
+
+    protected $dates = [
+        'last_login',
     ];
 
     public function articles() {
