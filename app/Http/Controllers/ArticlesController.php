@@ -15,7 +15,7 @@ class ArticlesController extends Controller
     {
         $articles=\App\Article::latest()->paginate(3);
        // $articles->load('user'); 지연로드
-        dd(view('articles.index', compact('articles'))->render());
+        //dd(view('articles.index', compact('articles'))->render());
         return view('articles.index', compact('articles'));
     }
 
@@ -43,7 +43,7 @@ class ArticlesController extends Controller
             return back()->with('flash_message', '글이 저장되지 않았습니다.')->withInput();
         }
 
-        event(new \App\Events\ArticleCreated($article));
+        event(new \App\Events\ArticleEvent($article));
 
         return redirect(route('articles.index'))->with('flash_message', '작성하신 글이 저장되었습니다.');
     }
@@ -57,7 +57,7 @@ class ArticlesController extends Controller
     public function show($id)
     {
         $article = \App\Article::findOrFail($id);
-        dd($article);
+        //dd($article);
         return $article->toArray();
     }
 

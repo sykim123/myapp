@@ -10,7 +10,25 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', 'WelcomeController@index');
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('mail', function (){
+    $article=App\Article::with('user')->find(1);
+
+    return Mail::send(
+        ['text' => 'emails.articles.created-text'],
+        compact('article'),
+        function ($message) use ($article) {
+            $message->from('syoung8818@gmail.com', 'sy');
+            $message->to(['syoung8818@gmail.com', 'sykim@yongsanzip.com']);
+            $message->subject('새 글이 등록되었습니다 -'. $article->title);
+            $message->cc('sykim@yongsanzip.com');
+            $message->attach(storage_path('coco.jpeg'));
+        }
+    );
+});
 
 
 Route::get('auth/login', function() {
@@ -45,5 +63,7 @@ Auth::routes();
 /*DB::listen(function ($query){
     var_dump($query->sql);
 });*/
+
+
 
 Route::get('/home', 'HomeController@index')->name('home');
