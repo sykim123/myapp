@@ -15,6 +15,7 @@ class ArticlesController extends Controller
     {
         $articles=\App\Article::latest()->paginate(3);
        // $articles->load('user'); 지연로드
+        dd(view('articles.index', compact('articles'))->render());
         return view('articles.index', compact('articles'));
     }
 
@@ -55,7 +56,9 @@ class ArticlesController extends Controller
      */
     public function show($id)
     {
-        return __METHOD__ . '은(는) 다음 기본 키를 가진 Article 모델을 조회합니다.:'.$id;
+        $article = \App\Article::findOrFail($id);
+        dd($article);
+        return $article->toArray();
     }
 
     /**
