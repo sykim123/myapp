@@ -177,7 +177,7 @@ return [
         //Barryvdh\Debugbar\ServiceProvider::class,
 
     ],
-
+    
     /*
     |--------------------------------------------------------------------------
     | Class Aliases
