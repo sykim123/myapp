@@ -46,7 +46,7 @@ class Documentation
     public function etag($file) {
 
 
-        $image = $this->docs->image($file);
+
 
         $lastModified = File::lastModified($this->path($file, 'docs/images'));
 
